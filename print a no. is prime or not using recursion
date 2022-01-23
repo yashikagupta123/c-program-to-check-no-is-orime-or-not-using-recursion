@@ -1,0 +1,33 @@
+// C Program to check agiven number using recursion
+#include<stdio.h>
+{
+  if (i!=1)
+  {
+    if (num%i!=0)
+     {
+       return checkPrime(num,i-1);
+       }
+       else
+       {
+       return 0;
+       }
+     }
+     else
+     {
+      return 1;
+     }
+   }
+   int main()
+   {
+     int num=0;
+     
+     printf("Enter a num :");
+     scanf("%d"&num);
+     
+     if(checkPrime(num,num/2)==1
+        printf("Given Number is Prime Number");
+     else
+        printf("Given Number is not Prime Nnumber");
+     return 0;
+     }
+     
